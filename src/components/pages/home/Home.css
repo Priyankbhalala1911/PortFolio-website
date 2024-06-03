@@ -1,0 +1,127 @@
+/* src/components/Home.css */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: -1;
+  }
+  
+  .home-content {
+    max-width: 50%;
+    padding: 20px;
+    padding-left: 5%;
+    
+  }
+  
+  .home-image {
+    max-width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    animation: animation 3s infinite;
+  }
+  
+  .home-image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin: 15%;
+    border: 10px solid #ff7f5f3e;
+    box-shadow: 10px 10px 100px 50px white;
+  }
+  
+  .home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .home span {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: 1rem;
+    color: #ff7e5f;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  
+  .cta-button:hover{
+    background-color: #ff7e5f;
+    color: #fff;
+    border: 1px solid white;
+  }
+
+  @keyframes animation {
+    0%{
+      transform: translate(0,0);
+    }
+    50%{
+      transform: translate(0,10px);
+    }
+    100%{
+      transform: translate(0,-10px);
+      
+    }
+    
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  
+    .home-content, .home-image {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .home h1 {
+      font-size: 2.5rem;
+    }
+  
+    .home p {
+      font-size: 1.2rem;
+    }
+  
+    .cta-button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home h1 {
+      font-size: 2rem;
+    }
+  
+    .home p {
+      font-size: 1rem;
+    }
+    .home-image{
+      justify-content: center;
+    }
+  
+    .cta-button {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  }
+  

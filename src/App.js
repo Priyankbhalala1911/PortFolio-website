@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react'
+import Navbar from './components/Navbar/Navbar'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './components/pages/home/Home'
+import About from './components/pages/about/About'
+import Experience from './components/pages/Experience/Experience'
+import Skill from './components/pages/Skills/skill'
+import Footer from './components/Footer/Footer'
+import Project from './components/pages/Project/Project'
+import Contact from './components/pages/Contact/Contact'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Nopage from './components/pages/Nopage/Nopage'
 
-function App() {
+
+const App = () => {
+  useEffect(() => {
+    AOS.init();
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/About' element={<About />} />
+          <Route path='/Experience' element={<Experience />} />
+          <Route path='/Skills' element={<Skill />} />
+          <Route path='/Project' element={<Project />} />
+          <Route path='/Contact' element={<Contact />} />
+          <Route path='*' element={<Nopage/>} />
+          
+
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
