@@ -16,7 +16,7 @@ const Project = () => {
       image: project2,
       title: "Online Book Store",
       description: "These Project developed using React,Nodejs and mongoDB.The functionality such as book sell/buy both,search book,login authentication,add to cart and Stripe payment system included in project.",
-      link: "https://example.com/project-two",
+      link: "https://github.com/Priyankbhalala1911/Book-store",
     },
     {
       image: project3,
