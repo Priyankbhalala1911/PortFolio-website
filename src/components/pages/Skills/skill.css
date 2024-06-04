@@ -61,6 +61,12 @@
   .skills{
     border-radius: 25px; 
   }
+  .skills h2{
+    font-size: 3rem;
+  }
+  .skills h2:hover{
+   transform: scale(0);
+  }
   .skills-container {
     flex-direction: column;
     align-items: center;

@@ -51,7 +51,10 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .experience h2 {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+  .experience h2:hover {
+    transform: scale(0);
   }
 
   .experience-item h3 {

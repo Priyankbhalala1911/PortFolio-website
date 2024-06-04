@@ -69,7 +69,10 @@
   
   @media (max-width: 480px) {
     .contact h2 {
-      font-size: 1.8rem;
+      font-size: 3rem;
+    }
+    .contact h2:hover{
+      transform: scale(0)
     }
     .contact{
       border-radius: 15px 15px 0;
