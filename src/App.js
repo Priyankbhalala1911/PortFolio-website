@@ -11,6 +11,7 @@ import Contact from './components/pages/Contact/Contact'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Nopage from './components/pages/Nopage/Nopage'
+import ScrollTop from './components/scrollTop/ScrollTop'
 
 
 const App = () => {
@@ -29,9 +30,8 @@ const App = () => {
           <Route path='/Project' element={<Project />} />
           <Route path='/Contact' element={<Contact />} />
           <Route path='*' element={<Nopage/>} />
-          
-
         </Routes>
+        <ScrollTop/>
         <Footer/>
       </BrowserRouter>
 

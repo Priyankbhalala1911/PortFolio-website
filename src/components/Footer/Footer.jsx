@@ -17,7 +17,7 @@ const Footer = () => {
               <Link to="/project">Project</Link>
               <Link to="/contact">Contact</Link>
             </div>
-            <div className="footer-social"  data-aos="zoom-in">
+            <div className="footer-social"  data-aos="zoom-in" data-aos-duration="500">
               <a href="https://www.facebook.com/priyank.bhalala.5" target="_blank" rel="noopener noreferrer">
                 <FaFacebookF />
               </a>
