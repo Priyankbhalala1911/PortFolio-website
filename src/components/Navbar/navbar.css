@@ -14,6 +14,7 @@
 }
 
 .navbar.scrolled {
+  position: fixed;
   background: #33333376;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 10px 10px;
