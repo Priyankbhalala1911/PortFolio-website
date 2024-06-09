@@ -10,6 +10,9 @@
   margin-bottom: 120px;
   font-size: 4.5rem;
   text-align: center;
+  @media (max-width:450px){
+    margin-bottom: 40px;
+  }
 }
 .projects h2:hover{
   transform: scale(4.8);

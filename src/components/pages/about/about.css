@@ -1,5 +1,6 @@
 /* src/components/About.css */
 .about {
+
   padding: 60px 20px;
   background: var(--background2);
   color: #333;
@@ -8,8 +9,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 75px 75px;
-  margin: 70px 0;
+  margin: 70px;
   box-shadow: 5px 5px 50px white;
+  
+  @media (max-width:450px){
+    margin: 20px;
+  }
 }
 
 .about-content {
@@ -26,6 +31,9 @@
 .about h2{
   margin-bottom: 80px;
   font-size: 4.5rem;
+  @media (max-width:450px){
+    margin-bottom: 20px;
+  }
 }
 .about h2:hover{
   transform: scale(4.7);
@@ -35,6 +43,9 @@
 }
 .about p{
   font-size: 1.8rem;
+  @media (max-width:450px){
+    font-size: 1.2rem;
+  }
 }
 
 .about-image {

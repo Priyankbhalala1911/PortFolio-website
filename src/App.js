@@ -12,6 +12,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Nopage from './components/pages/Nopage/Nopage'
 import ScrollTop from './components/scrollTop/ScrollTop'
+import "@fontsource/rubik"
 
 
 const App = () => {
