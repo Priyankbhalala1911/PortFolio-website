@@ -1,6 +1,6 @@
 /* src/components/Skills.css */
 .skills {
-  margin: 70px 0;
+  margin: 70px 40px;
   padding: 40px 20px;
   background: var(--background2);
   color: #333;
@@ -12,7 +12,13 @@
   font-size: 4.5rem;
   margin-bottom: 120px;
   text-align: center;
+
+  @media (max-width:450px) {
+    margin-bottom: 40px;
+
+  }
 }
+
 .skills h2:hover {
   transform: scale(4.8);
   cursor: pointer;
@@ -21,7 +27,7 @@
 }
 
 .skills-container {
-  padding:0 15%;
+  padding: 0 15%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
   gap: 20px;
@@ -58,21 +64,25 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .skills{
-    border-radius: 25px; 
+  .skills {
+    border-radius: 25px;
   }
-  .skills h2{
+
+  .skills h2 {
     font-size: 3rem;
   }
-  .skills h2:hover{
-   transform: scale(0);
+
+  .skills h2:hover {
+    transform: scale(0);
   }
+
   .skills-container {
     flex-direction: column;
     align-items: center;
     padding: 0;
   }
-  .skill-card{
+
+  .skill-card {
     width: 150px;
   }
 }
