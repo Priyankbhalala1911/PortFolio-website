@@ -37,6 +37,7 @@
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   width: 300px;
+  height: 370px;
 }
 
 .skill-card:hover {
@@ -55,6 +56,10 @@
   color: #333;
 }
 
+.skill-description{
+  font-size: 1.2rem;
+  color: #666;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -73,6 +78,6 @@
     padding: 0;
   }
   .skill-card{
-    width: 150px;
+    width: 95%;
   }
 }

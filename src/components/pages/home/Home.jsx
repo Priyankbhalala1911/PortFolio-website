@@ -19,6 +19,7 @@ const Home = () => {
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
+      
 
     }
     const type = new typed(typeRef.current, options)

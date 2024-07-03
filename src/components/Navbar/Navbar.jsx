@@ -30,7 +30,7 @@ const Navbar = () => {
     return (
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} >
             <div className="navbar-container">
-                <Link to="/" className='navbar-logo'>Port<span>Folio</span></Link>
+                <Link to="" className='navbar-logo'>Port<span>Folio</span></Link>
                 <div className="menu-icon" onClick={handleClick}>
                     {click ? <FaTimes /> : <FaBars />}
                 </div>
